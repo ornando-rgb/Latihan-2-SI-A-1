@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil — Nama Anda</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon (opsional) -->
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">NamaAnda</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Mobile menu toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text animate">
+          <h1 class="name">Nama Anda</h1>
+          <p class="tagline">Desainer & Pengembang Web — Membuat pengalaman digital yang elegan dan bermakna.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#portfolio">Lihat Proyek</a>
+            <a class="btn ghost" href="#contact">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-photo animate">
+          <!-- Ganti src dengan foto profil Anda di folder assets/ (contoh: assets/profile.jpg) -->
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a6a9f9d0e3e1a8f3b2c2d8f3c5a1c9a" alt="Foto profil Nama Anda" class="profile-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container section-inner animate">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Saya adalah seorang pengembang full-stack dengan fokus pada pembuatan antarmuka yang bersih, cepat, dan mudah digunakan. Menggabungkan desain yang baik dan praktik pengembangan modern untuk menghasilkan produk yang dapat diandalkan dan menyenangkan digunakan.</p>
+            <ul class="about-list">
+              <li><strong>Lokasi:</strong> Kota, Negara</li>
+              <li><strong>Pengalaman:</strong> 4+ tahun dalam pengembangan web</li>
+              <li><strong>Spesialis:</strong> Frontend (HTML, CSS, JS), React, UI/UX</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>30+</h3>
+              <p>Proyek selesai</p>
+            </div>
+            <div class="stat">
+              <h3>10+</h3>
+              <p>Klien puas</p>
+            </div>
+            <div class="stat">
+              <h3>4</h3>
+              <p>Tahun pengalaman</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="container section-inner">
+        <h2 class="section-title animate">Keahlian</h2>
+        <p class="section-subtitle animate">Beberapa skill yang saya gunakan sering dalam proyek.</p>
+
+        <div class="skills-grid">
+          <!-- skill item: data-skill adalah label, data-percent adalah nilai progress -->
+          <div class="skill animate" data-skill="HTML" data-percent="95">
+            <div class="skill-header">
+              <span>HTML</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+          </div>
+
+          <div class="skill animate" data-skill="CSS" data-percent="92">
+            <div class="skill-header">
+              <span>CSS</span>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill animate" data-skill="JavaScript" data-percent="88">
+            <div class="skill-header">
+              <span>JavaScript</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill animate" data-skill="React" data-percent="80">
+            <div class="skill-header">
+              <span>React</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="container section-inner">
+        <h2 class="section-title animate">Portfolio</h2>
+        <p class="section-subtitle animate">Contoh proyek yang telah saya kerjakan.</p>
+
+        <div class="portfolio-grid">
+          <!-- kartu proyek -->
+          <article class="project-card animate">
+            <div class="project-thumb" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6d9f7f8a7a9c1b1f');"></div>
+            <div class="project-body">
+              <h3>Project A</h3>
+              <p>Deskripsi singkat tentang project A dan teknologi yang digunakan.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-thumb" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8c1c0c7b2c6d9a3d');"></div>
+            <div class="project-body">
+              <h3>Project B</h3>
+              <p>Deskripsi singkat tentang project B—aplikasi responsive dan performa tinggi.</p>
+              <div class="project-tags">
+                <span>React</span><span>API</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-thumb" style="background-image: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f5a7a9c9b8d2e1f');"></div>
+            <div class="project-body">
+              <h3>Project C</h3>
+              <p>Desain UI/UX untuk platform e-commerce.</p>
+              <div class="project-tags">
+                <span>Figma</span><span>CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tambah kartu lain sesuai kebutuhan -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container section-inner animate">
+        <h2 class="section-title">Kontak</h2>
+        <p class="section-subtitle">Ingin bekerja sama? Kirim pesan singkat kepada saya.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required placeholder="Nama lengkap">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="email@domain.com">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Kirim Pesan</button>
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+      <div class="copyright">
+        &copy; <span id="year"></span> Nama Anda. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
